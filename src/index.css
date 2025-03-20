@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --btn-bg: #f0f0f0;
+    --btn-text: #1a1a1a;
+    --clr-primary-a50: #3b82f6;
+    /* Blue */
+    --clr-surface-a0: #ffffff;
+    --clr-surface-a20: #e2e8f0;
+    /* Light Gray */
+    --clr-primary-a10: #1a1a1a;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --btn-bg: #333333;
+    --btn-text: #ffffff;
+    --clr-primary-a50: #14b8a6;
+    /* Teal */
+    --clr-surface-a0: #1a1a1a;
+    --clr-surface-a20: #374151;
+    /* Dark Gray */
+    --clr-primary-a10: #ffffff;
+}
+
+html,
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Styled Button */
+.button {
+    background: var(--clr-primary-a50);
+    color: var(--clr-surface-a0);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(45, 255, 196, 0.5);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.button:hover {
+    background: var(--clr-surface-a20);
+    color: var(--clr-primary-a10);
+    transform: scale(1.05);
+}
