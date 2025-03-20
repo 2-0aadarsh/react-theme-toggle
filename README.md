@@ -67,9 +67,6 @@ Now, open **`http://localhost:5173`** in your browser to see the project in acti
 ## Contributing
 Contributions are welcome! Feel free to **fork** this repository, create a **new branch**, and submit a **pull request**.
 
-## License
-This project is **MIT Licensed**. Feel free to use and modify it as per your requirements.
-
 ---
 
 **Made by Aadarsh**
